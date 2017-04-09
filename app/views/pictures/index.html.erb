@@ -1,7 +1,11 @@
-<h1>Pictures</h1>
-<%= link_to "New Picture", "/pictures/new" %>
+<header class="index_header">
+<%= link_to "New Picture", "/pictures/new", class: "link_new" %>
+</header>
 
+<div class="all_photos">
 <% @pictures.each do |picture| %>
+<div class="photo_container">
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %></div>
 <% end %>
+</div>
