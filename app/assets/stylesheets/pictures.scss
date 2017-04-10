@@ -57,8 +57,13 @@ table {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #454545;
+  font-family: monospace;
+  color: white;
+}
+
 .main_header {
-  background-color: black;
   color: limegreen;
   text-align: center;
   text-transform: uppercase;
@@ -68,7 +73,6 @@ table {
 }
 
 .index_header {
-  background: black;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -81,4 +85,25 @@ table {
   font-size: 10px;
   border: 3px solid white;
   padding: 4px;
+}
+
+.all_photos {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid lime;
+  overflow: auto;
+}
+
+.photo_container {
+  float: left;
+  width: 33.33333333%;
+  height: 40vh;
+  text-align: center;
+}
+
+.photo_container img {
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
 }
