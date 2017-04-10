@@ -1,5 +1,9 @@
-<h2>Add a Picture</h2>
-<%= link_to "Back to Pictures", pictures_url %>
+<header>
+<%= link_to "Back to Pictures", pictures_url, class: "link_top" %>
+</header>
+
+<h2>Add a Picture:</h2>
+
 <%= form_for @picture do |f| %>
   <p>
     <%= f.label :artist %><br>
