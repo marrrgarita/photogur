@@ -1,0 +1,16 @@
+<header class="index_header">
+<%= link_to "Add a New Picture", "/pictures/new", class: "link_top" %>
+</header>
+
+<h2>
+All <%= Picture.count %> Photos
+</h2>
+
+<div class="all_photos">
+<% @pictures.each do |picture| %>
+<div class="photo_container">
+  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+  <p><%= picture.title %>, <%= picture.artist %></p>
+</div>
+<% end %>
+</div>

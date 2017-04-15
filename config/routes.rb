@@ -13,7 +13,9 @@ Rails.application.routes.draw do
   # patch 'pictures/:id' => 'pictures#update'
   #
   # delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+  get '/pictures/viewall' => 'pictures#view'
 
   resources :pictures
+
 
 end

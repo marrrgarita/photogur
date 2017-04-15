@@ -4,6 +4,11 @@ class PicturesController < ApplicationController
     @pictures = Picture.all
   end
 
+  def view
+    @pictures = Picture.all
+  end
+
+
   def show
     @picture = Picture.find(params[:id])
   end
@@ -43,7 +48,7 @@ class PicturesController < ApplicationController
     @picture.destroy
     redirect_to pictures_url
   end
-  
+
 
   private
   def picture_params
