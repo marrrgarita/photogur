@@ -71,7 +71,9 @@ header {
 footer {
   position: fixed;
   bottom: 0;
-  padding: 20px;
+  padding: 10px;
+  background: limegreen;
+  width: 100%;
 }
 
 a {
@@ -129,6 +131,10 @@ h2 {
 
 .photo_container img:hover {
   filter: none;
+}
+
+.single_image {
+  width: 85%;
 }
 
 form p {
