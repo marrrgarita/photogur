@@ -2,8 +2,12 @@
 <%= link_to "Add a New Picture", "/pictures/new", class: "link_top" %>
 </header>
 
+<h2>
+Showing: Most Recent <%= @most_recent_pictures.count %> Pictures
+</h2>
+
 <div class="all_photos">
-<% @pictures.each do |picture| %>
+<% @most_recent_pictures.each do |picture| %>
 <div class="photo_container">
   <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
   <p><%= picture.title %>, <%= picture.artist %></p>
