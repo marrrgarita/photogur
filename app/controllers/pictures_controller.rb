@@ -5,7 +5,7 @@ class PicturesController < ApplicationController
   end
 
   def view
-    @pictures = Picture.all
+    @pictures = Picture.all.newest_first
   end
 
 
