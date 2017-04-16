@@ -57,6 +57,14 @@ table {
   box-sizing: border-box;
 }
 
+.field_with_errors {
+  padding: 2px;
+  background-color: lime;
+  display: table;
+  text-align: center;
+  display: inline-block;
+}
+
 body {
   background-color: #454545;
   font-family: monospace;
@@ -66,6 +74,7 @@ body {
 
 header {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 footer {

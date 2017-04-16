@@ -2,6 +2,21 @@
   <%= link_to "Cancel", @picture, class: "link_top" %>
 </header>
 
-<h2>Edit Picture</h2>
+<!-- <h2>Edit Picture</h2>
+
+<% if @picture.errors.any? %>
+  <div class="error_explanation">
+    <h3>
+      ERROR! Photo could not be saved!
+    </h3>
+
+    <ul>
+      <% @picture.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+        <% end %>
+    </ul>
+  </div>
+<% end %> -->
+<%= render 'error_messages', picture: @picture %>
 
 <%= render 'picture_form', picture: @picture %>
